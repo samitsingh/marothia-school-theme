@@ -1,55 +1,180 @@
-/* ----------------------------------------------------
-   Marothia School Premium
----------------------------------------------------- */
+/* ==========================================================
+   Marothia School Premium Theme
+   Version : 1.0
+========================================================== */
 
 :root{
 
---primary:#0057B8;
---secondary:#F7941D;
---dark:#1E293B;
---light:#F7F9FC;
---white:#FFFFFF;
+--primary:#0B4EA2;
+--primary-dark:#083A7A;
+--secondary:#F7931E;
 
+--white:#FFFFFF;
+--light:#F7F9FC;
+--text:#1F2937;
+
+--radius:18px;
+
+--shadow:
+0 10px 35px rgba(0,0,0,.08);
+
+}
+
+/* Reset */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
 
-font-family:'Open Sans',sans-serif;
+font-family:"Open Sans",sans-serif;
 background:var(--white);
-color:var(--dark);
+color:var(--text);
 
 }
+
+/* Links */
 
 a{
 
-color:var(--primary);
 text-decoration:none;
+transition:.3s;
 
 }
 
-a:hover{
+/* ==========================================================
+Top Bar
+========================================================== */
 
-color:var(--secondary);
+.top-bar{
+
+background:var(--primary);
+color:#fff;
+
+font-size:14px;
 
 }
 
-/* Header */
+.top-bar p{
 
-.site-header{
+margin:0;
+
+}
+
+/* ==========================================================
+Header
+========================================================== */
+
+header{
+
+position:sticky;
+
+top:0;
+
+z-index:9999;
 
 background:#fff;
-box-shadow:0 4px 20px rgba(0,0,0,.05);
+
+box-shadow:var(--shadow);
 
 }
 
-/* Buttons */
+/* Logo */
+
+.custom-logo{
+
+max-height:80px;
+
+width:auto;
+
+}
+
+/* Navigation */
+
+.wp-block-navigation{
+
+gap:28px;
+
+}
+
+.wp-block-navigation a{
+
+font-weight:600;
+
+color:var(--text);
+
+}
+
+.wp-block-navigation a:hover{
+
+color:var(--primary);
+
+}
+
+/* ==========================================================
+Buttons
+========================================================== */
 
 .wp-element-button,
-button{
+
+.wp-block-button__link{
 
 background:var(--secondary);
-border-radius:8px;
-padding:12px 28px;
+
+color:#fff;
+
+padding:
+
+14px 28px;
+
+border-radius:40px;
+
 font-weight:700;
+
+transition:.3s;
+
+}
+
+.wp-block-button__link:hover{
+
+background:#ffab45;
+
+transform:translateY(-2px);
+
+}
+
+/* ==========================================================
+Containers
+========================================================== */
+
+.alignwide{
+
+max-width:1280px;
+
+margin:auto;
+
+}
+
+.alignfull{
+
+width:100%;
+
+}
+
+/* ==========================================================
+Section
+
+========================================================== */
+
+section{
+
+padding:100px 0;
 
 }
