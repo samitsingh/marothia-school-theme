@@ -1,1 +1,20 @@
+/*
+Theme Name: Marothia School Premium
+Theme URI: https://marothiaschool.in
+Author: Samit Singh & ChatGPT
+Author URI: https://github.com/samitsingh
+Description: Premium Full Site Editing WordPress Theme for Marothia English Medium School.
+Version: 1.0.0
+Requires at least: 6.8
+Tested up to: 7.0
+Requires PHP: 8.1
+Text Domain: marothia-school
+Tags: school, education, full-site-editing, block-theme
+*/
 
+body{
+    margin:0;
+    font-family:'Open Sans',sans-serif;
+    background:#ffffff;
+    color:#222;
+}
