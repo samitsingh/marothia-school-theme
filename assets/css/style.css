@@ -1,1 +1,55 @@
+/* ----------------------------------------------------
+   Marothia School Premium
+---------------------------------------------------- */
 
+:root{
+
+--primary:#0057B8;
+--secondary:#F7941D;
+--dark:#1E293B;
+--light:#F7F9FC;
+--white:#FFFFFF;
+
+}
+
+body{
+
+font-family:'Open Sans',sans-serif;
+background:var(--white);
+color:var(--dark);
+
+}
+
+a{
+
+color:var(--primary);
+text-decoration:none;
+
+}
+
+a:hover{
+
+color:var(--secondary);
+
+}
+
+/* Header */
+
+.site-header{
+
+background:#fff;
+box-shadow:0 4px 20px rgba(0,0,0,.05);
+
+}
+
+/* Buttons */
+
+.wp-element-button,
+button{
+
+background:var(--secondary);
+border-radius:8px;
+padding:12px 28px;
+font-weight:700;
+
+}
